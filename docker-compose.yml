@@ -3,8 +3,8 @@ services:
   app:
     image: golang:1.14.3
     volumes:
-        - .:/go/src/poc-docker-compose-aws-reko
-    working_dir: /go/src/poc-docker-compose-aws-reko
+        - .:/go/src/go-poc-docker-compose-aws-reko
+    working_dir: /go/src/go-poc-docker-compose-aws-reko
     command: go run main.go
     environment:
         - AWS_ACCESS_KEY_ID=XXX
