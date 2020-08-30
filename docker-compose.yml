@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    image: golang:1.14.3
+    volumes:
+        - .:/go/src/poc-docker-compose-aws-reko
+    working_dir: /go/src/poc-docker-compose-aws-reko
+    command: go run main.go
+    environment:
+        - AWS_ACCESS_KEY_ID=AKIAJ6U5KYXPRQYW7N7A
+        - AWS_SECRET_ACCESS_KEY=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
